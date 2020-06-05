@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: bootcamp-react-app
+name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -26,7 +26,8 @@ jobs:
       with:
          version: 12  
     - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.3.0
+      uses: Borales/actions-yarn@v1.22.4
+
       with:
         # Yarn command
         cmd: install
